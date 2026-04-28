@@ -8,7 +8,7 @@ class CountCharServer(Node):     # класс узла-сервера (имя л
     def __init__(self):
         super().__init__('Server_count_chars')   # имя узла
         # Создаём сервис с типом CountChar имя srv файла и в нем же поля- описания класса,
-        # именем 'count_chars' и callback-функцией f
+        # имя сервиса сервер + клиент - 'count_chars' и callback-функцией f
         self.server = self.create_service(CountChar, 'count_chars', self.f)
 
     def f(self, request, response):
