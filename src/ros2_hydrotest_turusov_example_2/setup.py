@@ -26,7 +26,9 @@ setup(
         'console_scripts': [
             'dummy = ros2_hydrotest_turusov_example_2.dummy:main',
              'server = ros2_hydrotest_turusov_example_2.server_node:main',
-             'client = ros2_hydrotest_turusov_example_2.client_node:main'
+             'client = ros2_hydrotest_turusov_example_2.client_node:main',
+                     'publisher = ros2_hydrotest_turusov_example_2.publisher_node:main',
+        'subscriber = ros2_hydrotest_turusov_example_2.subscriber_node:main'
         ],
     },
 )
